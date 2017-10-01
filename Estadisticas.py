@@ -2,9 +2,7 @@
 class Estadisticas():
     def calcular(self, cadena):
         if cadena != "":
-            if "," in cadena:
-                return [2]
-            else:
-                return [1]
+            numeros = cadena.split(",")
+            return [len(numeros)]
         else:
             return []
