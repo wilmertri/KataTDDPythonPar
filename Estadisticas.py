@@ -21,3 +21,5 @@ class Estadisticas():
         else:
             return []
 
+    def promedio(self, cadena):
+        pass

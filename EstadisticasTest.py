@@ -39,4 +39,6 @@ class EstadisticasTest(TestCase):
     def test_maximo_conMultiplesNumeros(self):
         self.assertEqual(Estadisticas().maximo("1,3,4,8"), [4,'1','8'], "Multiples numeros")
 
+    def test_promedio(self):
+        self.assertEqual(Estadisticas().promedio(""),[],"Cadena vacia")
 
