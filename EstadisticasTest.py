@@ -33,4 +33,7 @@ class EstadisticasTest(TestCase):
     def test_maximo_conUnNumero(self):
         self.assertEqual(Estadisticas().maximo("1"), [1], "Un numero")
 
+    def test_maximo_conDosNumeros(self):
+        self.assertEqual(Estadisticas().maximo("8,3"), [2,'3'], "Dos numeros")
+
 
