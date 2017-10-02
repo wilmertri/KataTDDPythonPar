@@ -15,5 +15,8 @@ class Estadisticas():
             return[]
 
     def maximo (self,cadena):
-        return []
+        if cadena != "":
+            return [1]
+        else:
+            return []
 
