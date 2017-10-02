@@ -30,4 +30,7 @@ class EstadisticasTest(TestCase):
     def test_minimo(self):
         self.assertEqual(Estadisticas().maximo(""), [], "Cadena vacia")
 
+    def test_minimo_conUnNumero(self):
+        self.assertEqual(Estadisticas().maximo("1"), [1,'1','1'], "Un numero")
+
 

@@ -15,6 +15,5 @@ class Estadisticas():
             return[]
 
     def maximo (self,cadena):
-
         return []
 
