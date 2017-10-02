@@ -48,3 +48,6 @@ class EstadisticasTest(TestCase):
     def test_promedio_conDosNumeros(self):
         self.assertEqual(Estadisticas().promedio("1,3"),[2,'1','3',2],"Dos numeros")
 
+    def test_promedio_conMultiplesNumeros(self):
+        self.assertEqual(Estadisticas().promedio("1,3,5,7"),[2,'1','7',4],"Multiples numeros")
+
