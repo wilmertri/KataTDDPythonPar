@@ -31,10 +31,10 @@ class EstadisticasTest(TestCase):
         self.assertEqual(Estadisticas().maximo(""), [], "Cadena vacia")
 
     def test_maximo_conUnNumero(self):
-        self.assertEqual(Estadisticas().maximo("1"), [1], "Un numero")
+        self.assertEqual(Estadisticas().maximo("1"), [1,'1','1'], "Un numero")
 
     def test_maximo_conDosNumeros(self):
-        self.assertEqual(Estadisticas().maximo("8,3"), [2], "Dos numeros")
+        self.assertEqual(Estadisticas().maximo("8,3"), [2,'3','8'], "Dos numeros")
 
     def test_maximo_conMultiplesNumeros(self):
         self.assertEqual(Estadisticas().maximo("1,3,4,8"), [4,'1','8'], "Multiples numeros")
