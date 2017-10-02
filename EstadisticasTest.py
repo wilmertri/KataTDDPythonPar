@@ -42,6 +42,9 @@ class EstadisticasTest(TestCase):
     def test_promedio(self):
         self.assertEqual(Estadisticas().promedio(""),[],"Cadena vacia")
 
-    def test_promedio(self):
+    def test_promedio_conUnNumero(self):
         self.assertEqual(Estadisticas().promedio("1"),[1],"Un numero")
+
+    def test_promedio_conDosNumeros(self):
+        self.assertEqual(Estadisticas().promedio("1,3"),[1,1,3,2],"Dos numeros")
 
