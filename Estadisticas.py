@@ -8,4 +8,7 @@ class Estadisticas():
             return []
 
     def minimo (self,cadena):
-        pass
+        if cadena != "":
+            return[1]
+        else:
+            return[]
