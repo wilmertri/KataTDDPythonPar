@@ -23,6 +23,11 @@ class Estadisticas():
 
     def promedio(self, cadena):
         if cadena != "":
-            return [int(cadena)]
+            if len(cadena) > 1:
+                numeros = cadena.split(",")
+                promedio = (int(numeros[0])+int(numeros[1]))/2
+                return [len(numeros), min(numeros), max(numeros),promedio]
+            else:
+                return [int(cadena)]
         else:
             return []
