@@ -22,4 +22,7 @@ class Estadisticas():
             return []
 
     def promedio(self, cadena):
-        return []
+        if cadena != "":
+            return [int(cadena)]
+        else:
+            return []
