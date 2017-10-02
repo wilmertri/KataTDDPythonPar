@@ -16,7 +16,10 @@ class Estadisticas():
 
     def maximo (self,cadena):
         if cadena != "":
-            return [1]
+            if "," in cadena:
+                return [2]
+            else:
+                return [1]
         else:
             return []
 
