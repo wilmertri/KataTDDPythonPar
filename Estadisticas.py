@@ -10,6 +10,10 @@ class Estadisticas():
     def minimo (self,cadena):
         if cadena != "":
             numeros = cadena.split(",")
-            return [len(numeros),min(numeros)]
+            return [len (numeros), min(numeros)]
         else:
             return[]
+
+    def maximo (self,cadena):
+        return pass
+
