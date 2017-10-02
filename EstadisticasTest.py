@@ -25,5 +25,5 @@ class EstadisticasTest(TestCase):
         self.assertEqual(Estadisticas().minimo("1,3"), [2], "Dos numeros")
 
     def test_calcular_conMultiplesNumeros(self):
-        self.assertEqual(Estadisticas().calcular("1,3,4&8"),[4],"Multiples numeros")
+        self.assertEqual(Estadisticas().calcular("1,3,4,8"),[4],"Multiples numeros")
 
