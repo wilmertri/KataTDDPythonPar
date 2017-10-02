@@ -6,3 +6,6 @@ class Estadisticas():
             return [len(numeros)]
         else:
             return []
+
+    def minimo (self,cadena):
+        pass
