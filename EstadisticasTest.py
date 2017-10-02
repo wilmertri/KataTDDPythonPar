@@ -20,3 +20,7 @@ class EstadisticasTest(TestCase):
 
     def test_minimo_conUnNumero(self):
         self.assertEqual(Estadisticas().minimo("1"), [1], "Un numero")
+
+    def test_minimo_conDosNumeros(self):
+        self.assertEqual(Estadisticas().minimo("1,3"), [2], "Dos numeros")
+
