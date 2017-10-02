@@ -11,4 +11,4 @@ class Estadisticas():
         if cadena != "":
             return[1]
         else:
-            pass
+            return[0]
