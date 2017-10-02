@@ -25,7 +25,12 @@ class Estadisticas():
         if cadena != "":
             if len(cadena) > 1:
                 numeros = cadena.split(",")
-                promedio = (int(numeros[0])+int(numeros[1]))/2
+                total = 0
+                for n in numeros:
+                    sum_num = int(n)
+                    total += sum_num
+
+                promedio = total/len(numeros)
                 return [len(numeros), min(numeros), max(numeros),promedio]
             else:
                 return [int(cadena)]
